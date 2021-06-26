@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <title>Capsule</title>
+
+    <style>
+      @font-face {
+        font-family: "Aeonik";
+        src: url("fonts/Aeonik-Regular.otf") format("otf"),
+              url("fonts/Aeonik-Regular.woff2") format("woff2");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Aeonik";
+        src: url("fonts/Aeonik-Medium.otf") format("otf"),
+              url("fonts/Aeonik-Medium.woff2") format("woff2");
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Aeonik";
+        src: url("fonts/Aeonik-Bold.otf") format("otf"),
+              url("fonts/Aeonik-Bold.woff2") format("woff2");
+        font-weight: 700;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        font-size: 16px;
+        line-height: 25px;
+        color: #002856;
+        font-family: "Aeonik", sans-serif;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- .header -->
+    <style>
+      .header-sec_gwp {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background-color: #122841;
+        width: 100%;
+        height: 65px;
+      }
+
+      .header-sec_gwp .btn_T3g {
+        margin-left: auto;
+        width: auto;
+        margin-bottom: 0;
+        padding: 10px 38px;
+        font-size: 14px;
+
+        background-color: white;
+        color:  #002856;
+      }
+
+      .header_b1jpr {
+        display: flex;
+        padding: 10px 20px;
+      }
+
+      .header_b1jpr img.logo_n1u {
+        height: 26px;
+      }
+
+      .accese_icon_asw {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        background-color: #146ff8;
+        border-radius: 50%;
+        cursor: pointer;
+
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+      }
+
+      .accese_icon_asw svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .chat_icon_zu1 {
+        width: 40px;
+        height: 40px;
+        padding: 20px;
+        background: #2F404E;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 2px 32px 0 rgb(0 0 0 / 16%);
+
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+      }
+
+      .chat_icon_zu1 svg {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <section class="header-sec_gwp">
+      <header class="header_b1jpr">
+          <img class="logo_n1u" src="//cdn.shopify.com/s/files/1/1210/5358/t/210/assets/logoFebruary2019.png?v=2422430393898304278" alt="logo">
+
+          <button class="btn_T3g">
+            <span class="bold_34G">Redeem Offer</span>
+          </button>
+      </header>
+
+      <div class="accese_icon_asw">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 131.3" enable-background="new 0 0 100 131.3" xml:space="preserve"><path d="M71.6,131.3c1,0,2.1-0.3,3.1-0.8c3.9-1.8,5.5-6.2,3.6-10.1c0,0-14.3-32.7-16.9-44.7c-1-4.2-1.6-15.3-1.8-20.5c0-1.8,1-3.4,2.6-3.9l32-9.6c3.9-1,6.2-5.5,5.2-9.4c-1-3.9-5.5-6.2-9.4-5.2c0,0-29.6,9.6-40.3,9.6c-10.4,0-39.8-9.4-39.8-9.4c-3.9-1-8.3,0.8-9.6,4.7c-1.3,4.2,1,8.6,5.2,9.6l32,9.6c1.6,0.5,2.9,2.1,2.6,3.9c-0.3,5.2-0.8,16.4-1.8,20.5c-2.6,12-16.9,44.7-16.9,44.7c-1.8,3.9,0,8.3,3.6,10.1c1,0.5,2.1,0.8,3.1,0.8c2.9,0,5.7-1.6,6.8-4.4l15.3-31.2l14.6,31.4C66.1,129.7,68.7,131.3,71.6,131.3z" style="fill: #fff;"></path> <circle style="fill: #fff;" cx="50.3" cy="14.6" r="14.6"></circle></svg>
+      </div>
+
+      <div class="chat_icon_zu1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"><path d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z" style="fill:#fff;"></path></svg>
+      </div>
+    </section>
+    <!-- /.header -->
+    
+    <!-- .preview -->
+    <style>
+      .preview_1V {
+        display: flex;
+
+        margin-top: 65px;
+        height: 780px;
+      }
+
+      .container_g8Au {
+        display: flex;
+
+        width: 100%;
+      }
+
+      .img_1Vh_V {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        background-position: center center;
+      }
+
+      .preview_1V__left {
+        width: 50%;
+      }
+
+      .preview_1V__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 110px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+      }
+
+      .preview_1V__right h2 {
+        margin-bottom: 20px;
+
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+      }
+
+      .list_3Gi {
+        max-width: 440px;
+        margin-bottom: 30px;
+
+        list-style: none;
+      }
+
+      .list_3Gi li {
+        padding-left: 28px;
+
+        text-align: left;
+
+        position: relative;
+      }
+
+      .list_3Gi li:not(:last-child) {
+          margin-bottom: 14px;
+      }
+
+      .list_3Gi li:before {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        content: "";
+        background-image: url("images/checked.9d99dfb.svg");
+        background-size: cover;
+      }
+
+      span.bold_34G {
+        font-weight: 700;
+      }
+
+      .extra_gW3 {
+        margin-bottom: 45px;
+      }
+
+      .btn_T3g {
+        margin-bottom: 15px;
+        padding: 19px 65px;
+        width: 100%;
+
+        background: none;
+        background-color: #002856;
+        font-size: 16px;
+        line-height: 27px;
+        border-radius: 5px;
+        font-weight: 700;
+        text-decoration: none;
+        border: none;
+
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+
+        position: relative;
+      }
+
+      .btn_T3g svg {
+        position: absolute;
+        top: calc(50% - 7px);
+        right: 20px;
+        width: 15px;
+        height: 15px;
+        fill: currentColor;
+      }
+
+      .bottom_2vVqI {
+        position: relative;
+        text-align: center;
+      }
+
+      .bottom_2vVqI svg{
+        top: calc(50% - 7px);
+        left: 20px;
+        width: 15px;
+        height: 15px;
+        fill: currentColor;
+      }
+    </style>
+
+    <section class="preview_1V">
+      <div class="container_g8Au">
+        
+      
+        <div class="preview_1V__left">
+          <img src="images/1Bh_B.png" class="img_1Vh_V">
+        </div>
+
+        <div class="preview_1V__right">
+          <h2>
+            More Drive. More Focus.
+          </h2>
+
+          <ul class="list_3Gi">
+            <li class="item_h5i">
+              <p class="text_r6i">
+                <span class="bold_34G">FOCUS MORE:</span> Get into the flow state and focus consistently, not just in spurts
+              </p>
+            </li>
+            <li class="item_h5i">
+              <p class="text_r6i">
+                <span class="bold_34G">PROCRASTINATE LESS:</span> Amp up your willpower and fuel accomplishment
+              </p>
+            </li>
+            <li class="item_h5i">
+              <p class="text_r6i">
+                <span class="bold_34G">STAMINA FOR YOUR BEST:</span> Charge your mental batteries evenly to avoid dips during work and play
+              </p>
+            </li>
+          </ul>
+
+          <div class="extra_gW3">
+            <span class="bold_34G">
+              Get $50 off your first month
+            </span>
+          </div>
+
+          <button class="btn_T3g">
+            <span class="bold_34G">Redeem Offer</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class="arrow_wzxZ8"><polygon points="6.93 0 5.44 1.42 10.05 5.98 0 5.98 0 8.02 10.05 8.02 5.46 12.56 6.92 14 14 7 6.93 0"></polygon></svg>
+          </button>
+
+          <div class="bottom_2vVqI">
+            <p>
+              <svg id="icon-like" viewBox="0 0 13 13">
+              <path d="M0,13H2.6V5.2H0ZM13,7.38l-1.13,4.25A1.76,1.76,0,0,1,10.09,13H3.9V5.21L5,1.19A1.39,1.39,0,0,1,6.4,0,1.4,1.4,0,0,1,7.8,1.4V5.2h3.42A1.78,1.78,0,0,1,13,7.38Z"></path>
+            </svg>
+              30 Day Money-Back Guarantee
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.preview -->
+
+    <!-- .testimonials -->
+    <style>
+      .testimonials_Oh3 {
+        padding-top: 120px;
+        padding-bottom: 20px;
+      }
+
+      .container_V8j {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .list__test_J82 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        list-style: none;
+      }
+
+      .item__test_G45 {
+        max-width: 30%;
+      }
+
+      .item__test_G45:not(:last-child) {
+        margin-right: 4px;
+      }
+
+      .stars_5ps {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .stars_5ps img{
+        height: 15px;
+        object-fit: cover;
+      }
+
+      .stars_5ps p {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .text__test_Pf3 h2 {
+        margin-bottom: 15px;
+      }
+
+      .text__test_Pf3 p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+
+      .info__test__Je5 {
+        display: flex;
+      }
+
+      .info__test__Je5 > * {
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+    </style>
+
+    <section class="testimonials_Oh3">
+      <div class="container_V8j">
+        <ul class="list__test_J82">
+          <li class="item__test_G45">
+            <div class="ul stars_5ps">
+              <img src="images/starts.png" alt="">
+              <p>alive</p>
+            </div>
+
+            <div class="text__test_Pf3">
+              <h2>Awesome!</h2>
+              <p>They are awesome! I’ll definitely be trying your other products.</p>
+            </div>
+            <div class="info__test__Je5">
+              <p>Glenn R.</p>
+              <time>05/06/2021</time>
+              <p>verified buyer</p>
+            </div>
+          </li>
+
+          <li class="item__test_G45">
+            <div class="ul stars_5ps">
+              <img src="images/starts.png" alt="">
+              <p>alive</p>
+            </div>
+
+            <div class="text__test_Pf3">
+              <h2>I'm a convert.</h2>
+              <p>I'm a four-time cancer survivor. way too many rounds of chemo to count. (read: major cognitive issues) I heard about you guys on Dr. Drew's podcast and signed up. I’m a convert. the supplements have been really helpful in helping me stay focused and activated. (I'm also a former comedy writer so maybe I can make it somewhat entertaining?)</p>
+            </div>
+            <div class="info__test__Je5">
+              <p>Derrick G.</p>
+              <time>03/06/2021</time>
+              <p>verified buyer</p>
+            </div>
+          </li>
+
+          <li class="item__test_G45">
+            <div class="ul stars_5ps">
+              <img src="images/starts.png" alt="">
+              <p>alive</p>
+            </div>
+
+            <div class="text__test_Pf3">
+              <h2>Best Nootropics</h2>
+              <p>Best nootropics I’ve tried. I will be back for more in the future!</p>
+            </div>
+            <div class="info__test__Je5">
+              <p>Hannah G</p>
+              <time>01/06/2021</time>
+              <p>verified buyer</p>
+            </div>
+          </li>
+        </ul>   
+      </div>
+    </section>
+    <!-- /.testimonials -->
+
+    <!-- .features -->
+    <style>
+      .features_Om1 {
+        text-align: center;
+        margin-top: 80px;
+      }
+
+      .features_Om1 h1 {
+        margin-bottom: 60px;
+      }
+
+      .flex__grid_3g1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flex-row_6Gw {
+        display: flex;
+        flex-wrap: wrap;
+
+        list-style: none;
+
+        justify-content: space-between;
+      }
+
+      .flex-item_Z0p {
+        padding: 0 50px;
+        margin-bottom: 100px;
+      }
+
+      .flex-item_Z0p img {
+        margin-bottom: 25px;
+      }    
+
+      .flex-item_Z0p h2 {
+        margin-bottom: 8px;
+
+        font-size: 19px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 33px;
+      }
+
+      .flex-item_Z0p p {
+        max-width: 210px;
+      }
+    </style>
+
+    <section class="features_Om1">
+      <div class="container_V8j">
+        <h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor
+        </h1>
+
+        <div class="flex__grid_3g1">
+          <ul class="flex-row_6Gw">
+            <li class="flex-item_Z0p">
+              <img src="images/features_1hb.png" alt="Radial Focus">
+              <h2>Radial Focus</h2>
+              <p>Clear your to-do list with laser focus.</p>
+            </li>
+            <li class="flex-item_Z0p">
+              <img src="images/features_2hb.png" alt="Radial Focus">
+              <h2>mental clarity*</h2>
+              <p>Feel incredible energy and better focus</p>
+            </li>
+            <li class="flex-item_Z0p">
+              <img src="images/features_3hb.png" alt="STOP PROCRASTINATING">
+              <h2>STOP PROCRASTINATING</h2>
+              <p>Tune out the time-wasting distractions.</p>
+            </li>
+          </ul>
+
+          <ul class="flex-row_6Gw">
+            <li class="flex-item_Z0p">
+              <img src="images/features_4hb.png" alt="UPGRADE YOUR MEMORY">
+              <h2>UPGRADE YOUR MEMORY</h2>
+              <p>Improve your memory with TruBrain’s specially formulated brain fuel.</p>
+            </li>
+            <li class="flex-item_Z0p">
+              <img src="images/features_5hb.png" alt="AVOID MENTAL BLOCKS">
+              <h2>AVOID MENTAL BLOCKS</h2>
+              <p>Boost your mental output and break through brain fog.</p>
+            </li>
+            <li class="flex-item_Z0p">
+              <img src="images/features_6hb.png" alt="Radial Focus">
+              <h2>VERBAL FLUENCY</h2>
+              <p>Find your words when it matters the most.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.features -->
+
+    <!-- .pill -->
+    <style>
+      .pill {
+        background-color: rgba(242, 241, 245, 0.56);
+        padding: 120px 0;
+      }
+
+      .pill > *{
+        font-family: "LL Circular", sans-serif;
+        color: rgb(20, 43, 111);
+      }
+
+      .pill__wrapper_Y3v {
+        display: flex;
+      }
+
+      .pill__left_gh1 {
+        width: 50%;
+        min-width: 400px;
+        padding-right: 120px;
+      }
+
+      .pill__left_gh1 h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.1;
+
+        margin-bottom: 40px;
+      }
+
+      .pill__right_B1p {
+        width: 50%;
+        min-width: 400px;
+      }
+
+      .pill__right_B1p img {
+        width: 470px;
+        height: 470px;
+      }
+
+      .pill__list_1Ze {
+        list-style: none;
+      }
+
+      .pill__list_1Ze li:not(:last-child) {
+        margin-bottom: 32px;
+      }
+
+      .pill__list_1Ze li:before {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        content: "";
+        background-image: url("images/checked.9d99dfb.svg");
+        background-size: cover;
+      }
+
+      .pill__list_1Ze li {
+        padding-left: 28px;
+
+        text-align: left;
+
+        position: relative;
+      }
+    </style>
+    
+    <section class="pill">
+      <div class="container_V8j">
+        <div class="pill__wrapper_Y3v">
+          <div class="pill__left_gh1">
+            <h1>
+              The key to being the most productive version of yourself is brain nutrition.
+            </h1>
+
+            <ul class="pill__list_1Ze">
+              <li>
+                Made with potent, natural amino acids, Nootropics and minerals that refuels what your brain burns through.
+              </li>
+
+              <li>
+                Capsules taste neutral with no carbs, no sugar, no caffeine, and no fillers.
+              </li>
+
+              <li>
+                Clinically Researched Ingredients. A Favorite of Healthcare Practitioners.
+              </li>
+            </ul>
+          </div>
+          <div class="pill__right_B1p">
+            <img src="images/PDP-EFK-Format.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.pill -->
+
+    <!-- .table -->
+    <style>
+      .tablet_El7 {
+         padding: 120px 0;
+      }
+
+      .logo_Nr3 {
+        max-width: 180px;
+        height: auto;
+      }
+
+      .table-top__Gwr {
+        display: flex;
+      }
+
+      .table__wrapper_k0r {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        max-width: 765px;
+      }
+
+      .table-top__Gwr {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 55px;
+      }
+
+      .table-top__Gwr h1 {
+        padding-right: 50px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+        padding-right: 15px;
+      }
+
+      .table-grid_lq2 td, .table-grid_lq2 th{
+        border: 1px solid #dee2e6;
+        padding: 5px 5px;
+      }
+    </style>
+
+    <section class="tablet_El7">
+      <div class="container_V8j">
+
+        <div class="table__wrapper_k0r">
+          <div class="table-top__Gwr">
+            <img src="//cdn.shopify.com/s/files/1/1210/5358/t/210/assets/logoFebruary2019.png?v=2422430393898304278" class="logo_Nr3">
+            <h1>Lorem ipsum dolit</h1>
+          </div>
+
+          <table class="table-grid_O4h" border=0 cellspacing="0" style="color: #4a5a6b;background-color: #fff;">
+           <thead class="text-center">
+            <tr>
+             <th style="width: 25%">
+                <img class="lazy" src="https://cdn1.neurohacker.com/ro27q8F45FE6s3orkimNtNXE.jpg" style="display: inline-block;">
+             </th>
+             <th style="width: 25%">
+                <h2>TruBrain<br>Capsules</h2>
+             </th>
+             <th style="width: 25%">
+                <h2>Just<br>Coffee</h2>
+             </th>
+             <th style="width: 25%">
+                <h2>Energy<br>Drinks</h2>
+             </th>
+            </tr>
+           </thead>
+          </table>
+
+          <table class="table-grid_lq2" border=0 cellspacing="0" style="color: #4a5a6b;background-color: #fff;">
+             <thead class="text-center">
+                <tr>
+                   <th class="text-right" style="width: 25%">
+                      Improves focus & memory
+                   </th>
+                   <th style="background-color: #d0f1f4;width: 25%"> ✔</th>
+                   <th style="width: 25%">✖</th>
+                   <th style="width: 25%">✖</th>
+                </tr>
+             </thead>
+             <tbody class="text-center">
+                <tr>
+                   <td class="text-right">
+                      Natural, safe <br>ingredients
+                   </td>
+                   <td style="background-color: #c2e3e7;">✔</td>
+                   <td>✔</td>
+                   <td>✖</td>
+                </tr>
+                <tr>
+                   <td class="text-right">
+                      Energy to fuel <br>your day
+                   </td>
+                   <td style="background-color: #d0f1f4;">✔</td>
+                   <td>
+                      ✔
+                   </td>
+                   <td>
+                      ✔
+                   </td>
+                </tr>
+                <tr>
+                   <td class="text-right">
+                      Zero carbs, <br>Zero sugar
+                   </td>
+                   <td style="background-color: #c2e3e7;">✔</td>
+                   <td>✖</td>
+                   <td>✖</td>
+                </tr>
+                <tr>
+                   <td class="text-right">
+                      Designed by <br>neuroscientists
+                   </td>
+                   <td style="background-color: #d0f1f4;">✔</td>
+                   <td>
+                      ✖
+                   </td>
+                   <td>
+                      ✖
+                   </td>
+                </tr>
+             </tbody>
+          </table>
+        </div>  
+      </div>
+    </section>
+    <!-- /.table -->
+
+    <!-- .guarante -->
+    <style>
+      .guarante-bg_g61 {
+        background-color: #deebed;
+        border-radius: 36px;
+        padding: 0 30px;
+      }
+
+      .guarante_wrapper_j1r {
+        display: flex;
+        align-items: center;
+        height: 242px;
+        justify-content: space-between;
+        padding: 0 10px;
+      }
+
+      .guarante_h2__k123 {
+        font-size: 40px;
+        color: #323232;
+        font-weight: 800;
+        line-height: normal;
+
+        margin-bottom: 6px;
+      }
+
+      .guarante_p__r173 {
+        letter-spacing: .02em;
+        line-height: 24px
+        color: #4a5a6b;
+      }
+
+      .guarante_imagebox_13hj {
+        display: flex;
+        align-items: center;
+      }
+
+      .guarante_imagebox_13hj img {
+        height: 120%;
+        position: relative;
+        top: -30px;
+      }
+    </style>
+    
+    <section class="guarante">
+      <div class="container_V8j">
+        <div class="guarante-bg_g61">
+         <div class="guarante_wrapper_j1r">
+            <div class="col-12 col-sm-10 offset-sm-1 px-sm-0 col-lg-6 offset-lg-0">
+               <h2 class="guarante_h2__k123">
+                  Your Brain Power
+                  <br>
+                  Is Guaranteed.
+               </h2>
+               <p class="guarante_p__r173" style="color: #4a5a6b;">
+                  If you do not love Capsules for any reason, simply get in
+                  <br>
+                  touch via phone or email and let us know you’d like a
+                  <br>
+                  refund.
+               </p>
+            </div>
+              <div class="guarante_imagebox_13hj">
+                 <img src="images/capsule_Uj12.webp">
+              </div>
+           </div>
+        </div>
+      </div> 
+    </section>
+    <!-- /.guarante -->
+
+    <!-- .learn-more -->
+    <style>
+      .learn-more_6Be {
+        padding: 120px 0;
+      }
+
+      .border-bottom_j12 {
+        border-bottom: 1px solid #e1e2e4;
+      }
+
+      .learn-more__header_k94 {
+        font-size: 70px;
+        color: #c6dde0;
+        line-height: 0.78em;
+      }
+
+      .collapsed_h06 {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0;
+
+        cursor: pointer;
+      }
+
+      .collapsed_h06 h3 {
+        font-size: 30px;
+        letter-spacing: -.02em;
+      }
+
+      .collapsed_h06 span {
+        font-size: 45px;
+        color: #589ba3;
+        font-weight: 400;
+
+        transition: transform .2s ease;
+      }
+
+      .collapsed_h06 span.show {
+        transform: rotate(90deg);
+      }
+
+      .collapse_O1e {
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.2s ease-out;
+      }
+
+      .collapse_O1e p:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    </style>
+
+    <section class="learn-more_6Be">
+      <div class="border-bottom_j12">
+        <div class="container_V8j">
+          <h2 class="learn-more__header_k94">Learn More</h2>
+        </div>
+      </div>
+
+      <div class="border-bottom_j12">
+        <div class="container_V8j">
+          <a class="collapsed_h06" data-collapse-id="collapse_O1n">
+            <h3>KEY FEATURES</h3>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse_O1e border-bottom_j12" id="collapse_O1n">
+        <div class="container_V8j">
+          <p>✔ Take control of your long-term brain health.</p>
+          <p>✔ Daily enzymes designed to slow atrophy as the brain ages.</p>
+          <p>✔ Made with ingredients validated by the National Institutes of Health.</p>
+        </div>
+      </div>
+
+      <div class="border-bottom_j12">
+        <div class="container_V8j">
+          <a class="collapsed_h06" data-collapse-id="collapse_O2n">
+            <h3>WHAT IS IT?</h3>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse_O1e border-bottom_j12" id="collapse_O2n">
+        <div class="container_V8j">
+          <p>NAD stands for Nicotinamide Adenine Dinucleotide. It's a natural molecule found within every living cell of your body. We depend upon NAD to convert the nutrients in our food into cellular capacity and to activate natural self-repair pathways that keep our cells in good working order.</p>
+          <p>Scientific studies have demonstrated that boosting NAD results in reversal of age-related damage back to a more youthful state. A growing body of scientific research now suggests one of the best ways to combat aging is to maintain high levels of NAD as you age.</p>
+        </div>
+      </div>
+
+      <div class="border-bottom_j12">
+        <div class="container_V8j">
+          <a class="collapsed_h06" data-collapse-id="collapse_O3n">
+            <h3>HOW DOES IT WORK?</h3>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse_O1e border-bottom_j12" id="collapse_O3n">
+        <div class="container_V8j">
+          <p>Grey Matter in the brain, responsible for learning and memory, can decline up to 20% in your adult years, even if you maintain a healthy lifestyle. As we age, our brains shrink in volume, memory fades, and lesions develop. It is not all negative nor passive, as biological aging is not tied absolutely to chronological ageing. It is possible to slow biological aging and even reduce risk of age-related decline.</p>
+          <p>In order to allow our natural self-repairs systems to restore the efficiency of our cells, we must maintain and raise our NAD levels within the cells. This can be done by the foundational elements of sleep, diet, and exercise. Clockwise is just an addition to that to naturally nudging your system to produce more NAD.</p>
+        </div>
+      </div>
+
+      <div class="border-bottom_j12">
+        <div class="container_V8j">
+          <a class="collapsed_h06" data-collapse-id="collapse_O4n">
+            <h3>HOW TO TAKE?</h3>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse_O1e border-bottom_j12" id="collapse_O4n">
+        <div class="container_V8j">
+          <p>Take two tablets every morning, with or without food. Each bottle contains a 30-day supply. Created for long-term use in healthy adults of all ages.</p>
+        </div>
+      </div>
+
+      <div class="border-bottom_j12">
+        <div class="container_V8j">
+          <a class="collapsed_h06" data-collapse-id="collapse_O5n">
+            <h3>INGREDIENTS</h3>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse_O1e border-bottom_j12" id="collapse_O5n">
+        <div class="container_V8j">
+          <img src="images/clockwise_supplement_facts_transparent_600px_tiny.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- /.learn-more -->
+
+    <!-- .persona-slider -->
+    <style>
+      .persona-slider {
+        position: relative;
+        background-image: linear-gradient(180deg, #fff 0%, #fff 8%, #abcdd1 8%, #abcdd1 80%, #fff 80%);
+      }
+      .slider-wrapper {
+        position: relative;
+        top: -40px;
+      }
+
+      .personaSliderBox {
+        display: flex;
+        padding-left: 50px;
+
+        list-style: none;
+      }
+
+      .tns-nav button {
+        background-color: rgba(0,0,0,.75);
+      }
+
+      .tns-liveregion {
+        display: none;
+      }
+      #tns1-mw {
+        overflow: hidden;
+      }
+      .tns-outer {
+        position: relative;
+      }
+
+      .persona-slider__controls {
+        display: flex;
+        justify-content: space-between;
+
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        z-index: 3;
+      }
+
+      .persona-slider__controls button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        background: none;
+      }
+
+      .persona-slider__controls button img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .dots_nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        list-style: none;
+      }
+
+      .dots_nav li button {
+        width: 5px;
+        height: 5px;
+
+        border: none;
+        background: none;
+
+        background: #c4c4c4;
+        border-radius: 50%;
+
+        transition: background-color .2s ease;
+      }
+
+      .dots_nav li.active button{
+        background: #222;
+      }
+
+      .dots_nav li:not(:last-child) {
+        margin-right: 5px;
+      }
+    </style>
+
+    <section class="persona-slider">
+      <div class="container_V8j">
+
+        <div class="slider-wrapper">
+          <div class="persona-slider__controls">
+            <button><img src="images/arrow.svg" style="transform:rotate(180deg)" alt=""></button>
+            <button><img src="images/arrow.svg" alt=""></button>
+          </div>
+
+          <ul class="personaSliderBox">
+            <li>
+              <img src="images/sliders/slide_1_gnw.jpg" alt="slide 1">
+            </li>
+            <li>
+              <img src="images/sliders/slide_2_z1g.jpg" alt="slide 2">
+            </li>
+            <li>
+              <img src="images/sliders/slide_3_bqo.jpg" alt="slide 3">
+            </li>
+            <li>
+              <img src="images/sliders/slide_4_nzo.jpg" alt="slide 4">
+            </li>
+            <li>
+              <img src="images/sliders/slide_5_b41.jpg" alt="slide 5">
+            </li>
+            <li>
+              <img src="images/sliders/slide_6_n12.jpg" alt="slide 6">
+            </li>
+          </ul>
+
+          <ul class="dots_nav">
+            <li data-nav='0' class="active"><button></button></li>
+            <li data-nav='1'><button></button></li>
+            <li data-nav='2'><button></button></li>
+            <li data-nav='3'><button></button></li>
+            <li data-nav='4'><button></button></li>
+            <li data-nav='5'><button></button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.persona-slider -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
