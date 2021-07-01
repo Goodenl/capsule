@@ -43,6 +43,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        overflow-x: hidden;
 
         font-size: 16px;
         line-height: 25px;
@@ -155,7 +156,7 @@
         border-right: 1px solid #5f6c7c;
       }
 
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 690px) {
         .header-sec_gwp {
           height: 60px
         }
@@ -247,7 +248,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 110px;
+        margin: 0 auto;
         padding-top: 90px;
         padding-bottom: 90px;
       }
@@ -349,7 +350,7 @@
         line-height: 26px;
       }
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 1024px) {
         .preview_1V {
           height: 100%
         }
@@ -362,13 +363,27 @@
           height: 500px
         }
 
-        .preview_1V__right {
+        .logo_n1u-mini {
+          display: block;
           margin: 0 auto;
-          padding-bottom: 0
+        }
+
+        .preview_1V__right {
+          margin: 0 10%;
+          padding-bottom: 0;
+          padding-top: 40px;
+        }
+
+        .preview_1V__right h2 {
+          text-align: center;
         }
 
         .container_g8Au {
           flex-wrap: wrap;
+        }
+
+        .list_3Gi {
+          max-width: 100%;
         }
       }
 
@@ -460,10 +475,6 @@
 
     <!-- .testimonials -->
     <style>
-      .testimonials_Oh3 {
-        padding-top: 120px;
-        padding-bottom: 20px;
-      }
 
       .container_V8j {
         max-width: 1060px;
@@ -482,10 +493,16 @@
 
       .item__test_G45 {
         max-width: 30%;
+        object-fit: cover;
       }
 
       .item__test_G45:not(:last-child) {
         margin-right: 4px;
+      }
+
+      .item__test_G45 img {
+        width: 100%;
+        height: auto;
       }
 
       .stars_5ps {
@@ -526,13 +543,14 @@
         line-height: 18px;
       }
 
-      @media only screen and (max-width:  768px) {
+      @media only screen and (max-width:  1024px) {
         .testimonials_Oh3 {
           padding-top: 80px;
         }
 
         .text__test_Pf3 p {
-          line-height: 18px;
+          font-size: 14px;
+          line-height: 20px;
         }
 
         .info__test__Je5 {
@@ -542,6 +560,24 @@
         .info__test__Je5 > * {
           margin-right: 5px;
           font-size: 14px;
+        }
+
+        .stars_5ps {
+          margin-bottom: 10px;
+        }
+
+        .text__test_Pf3 h2{
+          margin-bottom: 5px;
+        }
+      }
+
+      @media only screen and (max-width:  768px) {
+        .list__test_J82 {
+          overflow: scroll;
+        }
+
+        .item__test_G45 {
+          min-width: 480px;
         }
       }
 
@@ -556,54 +592,15 @@
       <div class="container_V8j">
         <ul class="list__test_J82">
           <li class="item__test_G45">
-            <div class="ul stars_5ps">
-              <img src="assets/starts.c32f6b9c.png" alt="">
-              <p>alive</p>
-            </div>
-
-            <div class="text__test_Pf3">
-              <h2>Awesome!</h2>
-              <p>They are awesome! I’ll definitely be trying your other products.</p>
-            </div>
-            <div class="info__test__Je5">
-              <p>Glenn R.</p>
-              <time>05/06/2021</time>
-              <p>verified buyer</p>
-            </div>
+            <img src="assets/test_1_hzq.a70b6f70.jpeg" alt="">
           </li>
 
           <li class="item__test_G45">
-            <div class="ul stars_5ps">
-              <img src="assets/starts.c32f6b9c.png" alt="">
-              <p>alive</p>
-            </div>
-
-            <div class="text__test_Pf3">
-              <h2>I'm a convert.</h2>
-              <p>I'm a four-time cancer survivor. way too many rounds of chemo to count. (read: major cognitive issues) I heard about you guys on Dr. Drew's podcast and signed up. I’m a convert. the supplements have been really helpful in helping me stay focused and activated. (I'm also a former comedy writer so maybe I can make it somewhat entertaining?)</p>
-            </div>
-            <div class="info__test__Je5">
-              <p>Derrick G.</p>
-              <time>03/06/2021</time>
-              <p>verified buyer</p>
-            </div>
+            <img src="assets/test_2_5lp.c2afa69e.jpeg" alt="">
           </li>
 
           <li class="item__test_G45">
-            <div class="ul stars_5ps">
-              <img src="assets/starts.c32f6b9c.png" alt="">
-              <p>alive</p>
-            </div>
-
-            <div class="text__test_Pf3">
-              <h2>Best Nootropics</h2>
-              <p>Best nootropics I’ve tried. I will be back for more in the future!</p>
-            </div>
-            <div class="info__test__Je5">
-              <p>Hannah G</p>
-              <time>01/06/2021</time>
-              <p>verified buyer</p>
-            </div>
+            <img src="assets/test_3_Omq.c5255110.jpeg" alt="">
           </li>
         </ul>   
       </div>
@@ -614,14 +611,13 @@
     <style>
       .features_Om1 {
         text-align: center;
-        margin-top: 80px;
       }
 
       .features_Om1 h1 {
         font-size: 40px;
         margin-bottom: 60px;
         font-weight: 500;
-        line-height: 48px;
+        line-height: 1.2;
       }
 
       .flex__grid_3g1 {
@@ -630,16 +626,14 @@
       }
 
       .flex-row_6Gw {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
         list-style: none;
-
-        justify-content: space-between;
       }
 
       .flex-item_Z0p {
-        padding: 0 50px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
       }
 
       .flex-item_Z0p img {
@@ -648,6 +642,8 @@
 
       .flex-item_Z0p h2 {
         margin-bottom: 8px;
+        width: 229px;
+        margin: 0 auto;
 
         font-size: 19px;
         text-transform: uppercase;
@@ -656,20 +652,34 @@
       }
 
       .flex-item_Z0p p {
-        max-width: 210px;
-        line-height: 26px;
+        width: 220px;
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .features_Om1 h1 {
+          font-size: 31px;
+        }
       }
 
       @media only screen and (max-width: 768px) {
         .flex-item_Z0p {
           padding: 0 10px;
         }
+
+        .flex-item_Z0p h2 {
+          font-size: 16px;
+          width: 180px;
+        }
+
+        .flex-item_Z0p p {
+          font-size: 14px;
+          width: 180px
+        }
       }
 
-      @media only screen and (max-width: 375px) {
-        .list__test_J82 {
-          overflow: scroll;
-        }
+      @media only screen and (max-width: 600px) {
+        
 
         .features_Om1 h1 {
           font-size: 28px;
@@ -788,11 +798,7 @@
 
       .pill__wrapper_Y3v {
         display: flex;
-      }
-
-      .pill__left_gh1 {
-        width: 50%;
-        padding-right: 120px;
+        justify-content: center;
       }
 
       .pill__left_gh1 h1 {
@@ -802,10 +808,6 @@
         font-family: "Circular";
 
         margin-bottom: 40px;
-      }
-
-      .pill__right_B1p {
-        width: 50%;
       }
 
       .pill__right_B1p img {
@@ -844,35 +846,56 @@
         position: relative;
       }
 
-      @media only screen and (max-width:  768px) {
-        .pill {
-          padding: 80px 0;
+      @media only screen and (min-width: 750px) {
+        .pill__left_gh1{
+          align-items: flex-start;
+          width: 340px;
+          min-height: 340px;
+          margin-right: 20px;
         }
 
-        .pill__left_gh1 {
-          padding-right: 20px;
+        .pill__right_B1p {
+          align-items: flex-start;
+          width: 340px;
+          min-height: 340px;
         }
 
-        .pill__left_gh1 h1 {
-          font-size: 30px;
-          margin-bottom: 32px;
-          line-height: 2.25rem
+
+      }
+
+      @media only screen and (min-width: 960px) {
+        .pill__left_gh1{
+          width: 400px;
+          min-height: 400px;
+          margin-right: 64px;
         }
 
-        .pill__list_1Ze li {
-          line-height: 28px;
-        }
-
-        .pill__right_B1p img {
-          width: 80%;
-          margin: 0 auto;
-          position: relative;
-          bottom: -90px;
-          display: block;
+        .pill__right_B1p {
+          width: 400px;
+          min-height: 400px;
         }
       }
 
-      @media only screen and (max-width:  375px) {
+      @media only screen and (min-width: 1200px) {
+        .pill__left_gh1 {
+          width: 470px;
+          min-height: 470px;
+          margin-right: 120px;
+        }
+
+        .pill__right_B1p {
+          width: 470px;
+          min-height: 470px;
+        }
+      }
+
+      @media only screen and (max-width:  750px) {
+
+        .pill__list_1Ze li {
+          font-size: 16px;
+          line-height: 28px;
+        }
+
         .pill {
           padding: 60px 0;
         }
@@ -885,7 +908,11 @@
         }
 
         .pill__left_gh1 h1 {
-          margin-bottom: 0
+          margin-bottom: 0;
+          text-align:  center;
+          font-size: 30px;
+          margin-bottom: 32px;
+          line-height: 2.25rem
         }
 
         .pill__left_gh1 {
@@ -1182,11 +1209,6 @@
         top: -30px;
       }
 
-       @media only screen and (max-width:  991px) {
-        .guarante_imagebox_13hj {
-          width: 40%;
-        }
-      }
       
       @media only screen and (max-width:  768px) {
 
@@ -1575,7 +1597,7 @@
         height: 100%;
       }
 
-      @media only screen and (max-width:  768px) {
+      @media only screen and (max-width: 768px) {
         .persona-slider__controls {
           display: none;
         }
